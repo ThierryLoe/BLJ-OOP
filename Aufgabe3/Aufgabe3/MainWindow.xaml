@@ -1,0 +1,21 @@
+﻿<Window x:Class="Aufgabe3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aufgabe3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="415" Margin="5,2,0,0" VerticalAlignment="Top" Width="387">
+            <TextBlock Canvas.Left="68" TextWrapping="Wrap" Text="Reiseduer zum Mond" Canvas.Top="27"/>
+            <RadioButton x:Name="btn_Tagen" Content="In Tagen" Canvas.Left="64" Canvas.Top="101" Height="14" Checked="btn_Tagen_Checked"/>
+            <RadioButton x:Name="btn_Stunden" Content="In Stunden" Canvas.Left="190" Canvas.Top="101" RenderTransformOrigin="0.77,0.533" Checked="btn_Stunden_Checked"/>
+            <TextBlock Canvas.Left="67" TextWrapping="Wrap" Text="Geschwindigkeit in km/h" Canvas.Top="138"/>
+            <TextBox x:Name="textbox_Geschwindigkeit" Height="24" Canvas.Left="213" TextWrapping="Wrap" Text="" Canvas.Top="135" Width="58"/>
+            <Button x:Name="btn_rechnen" Content="Rechnen" Canvas.Left="66" Canvas.Top="188" Width="206" Click="btn_rechnen_Click"/>
+            <TextBlock Canvas.Left="70" TextWrapping="Wrap" Text="Reisedauer" Canvas.Top="228"/>
+            <TextBox x:Name="textbox_Resultat" Height="24" Canvas.Left="146" TextWrapping="Wrap" Text="" Canvas.Top="228" Width="120"/>
+        </Canvas>
+    </Grid>
+</Window>

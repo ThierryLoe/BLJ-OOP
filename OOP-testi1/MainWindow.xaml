@@ -1,0 +1,37 @@
+﻿<Window x:Class="OOP_testi1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_testi1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="383" Margin="33,25,0,0" VerticalAlignment="Top" Width="727">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBB9D17" Offset="0.578"/>
+                    <GradientStop Color="#FF1435A2" Offset="0.869"/>
+                    <GradientStop Color="#FFFBFBFD" Offset="0.781"/>
+                    <GradientStop Color="#FFBB1787" Offset="0.426"/>
+                    <GradientStop Color="#FFB417BB" Offset="0.315"/>
+                    <GradientStop Color="#FF17BBAC" Offset="0.147"/>
+                    <GradientStop Color="#FF7017BB" Offset="0.382"/>
+                    <GradientStop Color="#FFE1E4EE" Offset="0.952"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Button x:Name="btn_Berechne" Content="Berechne" Margin="400,100,0,0"  Width="75" Click="btn_Berechne_Click"/>
+            <Button x:Name="btn_finish" Content="Benden" Margin="400,200,0,0" Width="75" Click="btn_finish_Click"/>
+            <TextBox x:Name="berechnung_a" Height="24" Margin="200,0,0,0" TextWrapping="Wrap" Text="" Canvas.Top="94" Width="115"/>
+            <TextBlock x:Name="Text1" Canvas.Left="25" TextWrapping="Wrap" Text="Breite" Margin="20,100,0,0" Height="36" Width="132"/>
+            <TextBlock x:Name="Textblock2" Canvas.Left="26" TextWrapping="Wrap" Text="Höhe" Margin="20,150,0,0" Height="26" Width="78"/>
+
+            <TextBlock Canvas.Left="48" TextWrapping="Wrap" Text="Berechnung eines Rechtecks" Margin="20,18,0,0" Height="32" Width="192"/>
+            <TextBox x:Name="berechnung_b" Height="22" Margin="200,0,0,0" TextWrapping="Wrap" Text="" Canvas.Top="143" Width="120"/>
+            <TextBox x:Name="textbox_resultat" Height="22" Margin="200,0,0,0" TextWrapping="Wrap" Text="" Canvas.Top="194" Width="120"/>
+            <Button x:Name="btn_clear" Content="Clear" Margin="400,150,0,0"  Width="75" Click="btn_clear_Click"/>
+            <TextBlock x:Name="textblock_ergebnis" Canvas.Left="28" TextWrapping="Wrap" Text="Ergebnis"  Margin="20,200,0,0"/>
+        </Canvas>
+
+    </Grid>
+</Window>
